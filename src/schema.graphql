@@ -1,0 +1,49 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type EncuentroNacionalType {
+  _id: ID
+  idBuscar: String
+  nombrePlantel: String
+  correoPlantel: String
+  telefonoPlantel: String
+  estadoPlantel: String
+  municipioPlantel: String
+  callePlantel: String
+  coloniaPlantel: String
+  nombreContig: String
+  correoContig: String
+  telefonoContig: String
+  nombreAlumno: String
+  fotografia: String
+  disciplina: String
+  modalidad: String
+}
+
+input EncuentroNacionalInput {
+  _id: ID
+  idBuscar: String
+  nombrePlantel: String
+  correoPlantel: String
+  telefonoPlantel: String
+  estadoPlantel: String
+  municipioPlantel: String
+  callePlantel: String
+  coloniaPlantel: String
+  nombreContig: String
+  correoContig: String
+  telefonoContig: String
+  nombreAlumno: String
+  fotografia: String
+  disciplina: String
+  modalidad: String
+}
+
+type Query {
+  listado: [EncuentroNacionalType!]
+}
+
+type Mutation {
+  registro(datos: EncuentroNacionalInput!): EncuentroNacionalType!
+}
